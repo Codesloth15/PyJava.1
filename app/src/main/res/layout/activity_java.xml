@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".java">
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/upload_text"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/century_gothic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="Upload a Java File"/>
+            <ImageView
+                android:id="@+id/file_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/upload_text"
+                android:layout_marginTop="35dp"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+             />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/file_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Insert File"
+                android:textSize="15dp" />
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:layout_height="120dp">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/file_name"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/addfiles" />
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_gravity="center_vertical"
+                    android:backgroundTint="#B198CF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Cancel"
+                    android:visibility="invisible"
+                    android:layout_marginStart="20dp"
+                    />
+                <Button
+                    android:id="@+id/upload_btn"
+                    android:layout_gravity="center_vertical"
+                    android:backgroundTint="#AB66FF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Upload"
+                    android:layout_marginStart="20dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

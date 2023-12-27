@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="#CFCECE">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_name"
+        android:elevation="20dp"
+        android:backgroundTint="@color/purple_200"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp">
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:elevation="15px"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:text="question"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+     <androidx.cardview.widget.CardView
+         android:id="@+id/correctcard"
+         android:layout_below="@+id/cardview_name"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <RelativeLayout
+
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <TextView
+                 android:id="@+id/correct"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="5dp"
+                 android:text="CORRECT:"
+                 android:textStyle="bold"
+                 android:textColor="#4CAF50"
+                 tools:ignore="MissingPrefix" />
+             <TextView
+                 android:id="@+id/correct_answer"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="18dp"
+                 android:layout_below="@+id/correct"
+                 android:layout_marginTop="3dp"
+                 android:padding="5dp"
+                 android:text=""/>
+         </RelativeLayout>
+
+     </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="5dp"
+        android:id="@+id/wrongcard"
+        android:layout_below="@+id/correctcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/wrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="YOUR ANSWER:"
+                android:textStyle="bold"
+                android:textColor="#D62E3C"
+                tools:ignore="MissingPrefix" />
+            <TextView
+                android:id="@+id/wrong_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wrong"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:padding="5dp"
+                android:text=""/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

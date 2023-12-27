@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:elevation="5dp"
+        android:backgroundTint="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/container_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_margin="10dp"
+                    android:id="@+id/studentImageView"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/placeholder_image" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/studentNameTextView"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:text="name"
+                    android:textSize="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="8dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="-25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/container_info"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/studentEasyScoreTextView"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#FF9800"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/century_gothic" />
+
+                <TextView
+                    android:id="@+id/studentNormalScoreTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#3F51B5"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/century_gothic" />
+
+                <TextView
+                    android:id="@+id/studentHardScoreTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#A80E0E"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/century_gothic" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

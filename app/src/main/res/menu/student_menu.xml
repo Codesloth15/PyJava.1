@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/private23"
+            android:icon="@drawable/ic_baseline_privacy_tip_24"
+            android:title="Privacy and policies"/>
+        <item
+            android:id="@+id/picture"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Logout"/>
+
+    </group>
+
+</menu>

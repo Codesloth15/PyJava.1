@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/forums"
+        android:icon="@drawable/forums"
+        android:title="Create Quiz" />
+
+
+
+    <item
+        android:id="@+id/picture"
+        android:icon="@drawable/quizm"
+        android:title="Manage quiz"/>
+
+
+    <item
+        android:id="@+id/progress23"
+        android:icon="@drawable/statistic"
+        android:title="Progress"/>
+
+</menu>

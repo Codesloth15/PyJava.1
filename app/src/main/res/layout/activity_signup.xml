@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/ITS_LOGO_IMAGE"
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="150dp"
+            android:src="@drawable/logo_java"
+            android:layout_marginTop="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/create_Email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/create_firstName"
+            app:startIconDrawable="@drawable/baseline_person_outline_24"
+            android:layout_marginTop="10dp"
+          >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="User Name"
+                android:backgroundTint="#FFFFFF"
+                android:hint="User Name"
+                android:inputType="textEmailAddress"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/create_password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/create_lastName"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/baseline_lock_24"
+            app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Email"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/create_username"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/create_password"
+            app:startIconDrawable="@drawable/baseline_lock_24"
+            app:endIconMode="password_toggle"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Email"
+                app:endIconMode="password_toggle"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Confirm  Password"
+                android:inputType="textPassword"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/create_firstName"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/ITS_LOGO_IMAGE"
+            app:startIconDrawable="@drawable/baseline_person_outline_24"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:autofillHints="Email"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Full Name(L,F,T.)"
+                android:inputType="textEmailAddress"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/create_lastName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/create_Email"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/baseline_mail_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Email"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_username"
+            android:background="@drawable/corner"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="CREATE"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+         />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_below="@id/registered">
+            <TextView
+                android:id="@+id/CREATE_TEXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/CREATE_LINK"
+                android:text="Already have an account?"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/signin"
+                android:text="\tSign in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#673AB7"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
